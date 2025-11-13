@@ -1,4 +1,4 @@
-import { ArrowSVG } from "../utils/icons";
+
 
 export const Button = ({
   text,
@@ -58,7 +58,7 @@ export const Button = ({
 
       {arrow === "left" && (
         <span className="transition-colors duration-200 text-[inherit] group-hover:text-white">
-          <ArrowSVG color="currentColor" orientation="left" />
+          {/* <ArrowSVG color="currentColor" orientation="left" /> */}
         </span>
       )}
       <span className="relative z-10 flex items-center justify-center text-center">
@@ -66,7 +66,7 @@ export const Button = ({
       </span>
       {arrow === "right" && (
         <span className="transition-colors duration-200 text-[inherit] group-hover:text-white">
-          <ArrowSVG color="currentColor" orientation="right" />
+          {/* <ArrowSVG color="currentColor" orientation="right" /> */}
         </span>
       )}
       {icon && (
