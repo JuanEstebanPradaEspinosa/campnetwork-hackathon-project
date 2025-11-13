@@ -5,7 +5,7 @@ function WelcomePage() {
     <div className="flex flex-col gap-10">
       <section className="mx-auto max-w-4xl text-center">
         <h1 className="bg-linear-to-br from-orange-600 to-orange-400 bg-clip-text text-4xl font-extrabold text-transparent sm:text-5xl">
-          Welcome to the Camp Network Hackathon
+          Welcome to the Camp Network Hackathon - test version
         </h1>
         <p className="mt-4 text-base text-gray-700 sm:text-lg">
           Build, explore, and create with a network-first mindset. This space is
