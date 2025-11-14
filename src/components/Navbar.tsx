@@ -52,6 +52,66 @@ function Navbar() {
           >
             Settings
           </NavLink>
+          <NavLink
+            to="/provider"
+            className={({ isActive }) =>
+              `text-sm font-medium transition ${
+                isActive
+                  ? "text-orange-600"
+                  : "text-gray-700 hover:text-orange-600"
+              }`
+            }
+          >
+            Provider
+          </NavLink>
+          <NavLink
+            to="/socials"
+            className={({ isActive }) =>
+              `text-sm font-medium transition ${
+                isActive
+                  ? "text-orange-600"
+                  : "text-gray-700 hover:text-orange-600"
+              }`
+            }
+          >
+            Socials
+          </NavLink>
+          <NavLink
+            to="/mint"
+            className={({ isActive }) =>
+              `text-sm font-medium transition ${
+                isActive
+                  ? "text-orange-600"
+                  : "text-gray-700 hover:text-orange-600"
+              }`
+            }
+          >
+            Mint
+          </NavLink>
+          <NavLink
+            to="/ipmarket"
+            className={({ isActive }) =>
+              `text-sm font-medium transition ${
+                isActive
+                  ? "text-orange-600"
+                  : "text-gray-700 hover:text-orange-600"
+              }`
+            }
+          >
+            IpNFT & Market
+          </NavLink>
+          <NavLink
+            to="/personal"
+            className={({ isActive }) =>
+              `text-sm font-medium transition ${
+                isActive
+                  ? "text-orange-600"
+                  : "text-gray-700 hover:text-orange-600"
+              }`
+            }
+          >
+            Personal
+          </NavLink>
         </div>
 
         <div className="flex items-center gap-2">
