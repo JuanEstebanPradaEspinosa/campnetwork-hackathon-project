@@ -1,8 +1,7 @@
 import { useCallback, useMemo, useState } from "react";
 import Section from "../components/Section";
 import { useAuth, useAuthState } from "@campnetwork/origin/react";
-import { campMainnet, campTestnet } from "@campnetwork/origin";
-import { createWalletClient, custom } from "viem";
+// import { campMainnet, campTestnet } from "@campnetwork/origin";
 
 function ProviderSetup() {
   const auth = useAuth();
@@ -13,7 +12,7 @@ function ProviderSetup() {
   );
 
   const chain = useMemo(() => {
-    return selectedChain === "mainnet" ? campMainnet : campTestnet;
+    //return selectedChain === "mainnet" ? campMainnet : campTestnet;
   }, [selectedChain]);
 
   const initViemClient = useCallback(async () => {
@@ -23,16 +22,16 @@ function ProviderSetup() {
         setStatus("No wallet provider found. Please install a wallet.");
         return;
       }
-      const walletClient = createWalletClient({
-        chain,
-        transport: custom((window as any).ethereum),
-      });
+      // const walletClient = createWalletClient({
+      //   chain,
+      //   transport: custom((window as any).ethereum),
+      // });
 
       if (!auth.origin) {
         setStatus("Origin not available.");
         return;
       }
-      await auth.origin.setViemClient(walletClient);
+      //await auth.origin.setViemClient(walletClient);
       setStatus(
         "Viem client set on Origin Auth. You can now use onchain methods."
       );

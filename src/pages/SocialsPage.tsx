@@ -5,16 +5,16 @@ import { useState } from "react";
 function SocialsPage() {
   const {
     isLinkingOpen,
-    openTwitterModal,
-    openSpotifyModal,
-    openTiktokModal,
-    linkTwitter,
-    linkSpotify,
-    linkTiktok,
-    linkTelegram,
-    unlinkTwitter,
-    unlinkSpotify,
-    unlinkTiktok,
+    // openTwitterModal,
+    // openSpotifyModal,
+    // openTiktokModal,
+    // linkTwitter,
+    // linkSpotify,
+    // linkTiktok,
+    // linkTelegram,
+    // unlinkTwitter,
+    // unlinkSpotify,
+    // unlinkTiktok,
     closeModal,
   } = useLinkModal();
 
@@ -27,7 +27,8 @@ function SocialsPage() {
           Manage Social Connections
         </h1>
         <p className="mt-3 text-gray-700">
-          Open modals to link or unlink Twitter, Spotify, Tiktok, or link Telegram directly.
+          Open modals to link or unlink Twitter, Spotify, Tiktok, or link
+          Telegram directly.
         </p>
       </div>
 
@@ -37,19 +38,19 @@ function SocialsPage() {
             <div className="text-sm font-semibold text-gray-900">Twitter</div>
             <div className="mt-3 flex flex-wrap gap-2">
               <button
-                onClick={openTwitterModal}
+                // onClick={() => openTwitterModal(true)}
                 className="rounded-md border border-orange-300 bg-white px-3 py-2 text-orange-700 hover:bg-orange-50"
               >
                 Open Modal
               </button>
               <button
-                onClick={() => linkTwitter()}
+                // onClick={() => linkTwitter()}
                 className="rounded-md bg-orange-500 px-3 py-2 text-white hover:bg-orange-600"
               >
                 Link
               </button>
               <button
-                onClick={() => unlinkTwitter()}
+                // onClick={() => unlinkTwitter()}
                 className="rounded-md bg-gray-100 px-3 py-2 text-gray-800 hover:bg-gray-200"
               >
                 Unlink
@@ -61,19 +62,19 @@ function SocialsPage() {
             <div className="text-sm font-semibold text-gray-900">Spotify</div>
             <div className="mt-3 flex flex-wrap gap-2">
               <button
-                onClick={openSpotifyModal}
+                // onClick={openSpotifyModal}
                 className="rounded-md border border-orange-300 bg-white px-3 py-2 text-orange-700 hover:bg-orange-50"
               >
                 Open Modal
               </button>
               <button
-                onClick={() => linkSpotify()}
+                // onClick={() => linkSpotify()}
                 className="rounded-md bg-orange-500 px-3 py-2 text-white hover:bg-orange-600"
               >
                 Link
               </button>
               <button
-                onClick={() => unlinkSpotify()}
+                // onClick={() => unlinkSpotify()}
                 className="rounded-md bg-gray-100 px-3 py-2 text-gray-800 hover:bg-gray-200"
               >
                 Unlink
@@ -85,19 +86,19 @@ function SocialsPage() {
             <div className="text-sm font-semibold text-gray-900">Tiktok</div>
             <div className="mt-3 flex flex-wrap gap-2">
               <button
-                onClick={openTiktokModal}
+                // onClick={openTiktokModal}
                 className="rounded-md border border-orange-300 bg-white px-3 py-2 text-orange-700 hover:bg-orange-50"
               >
                 Open Modal
               </button>
               <button
-                onClick={() => linkTiktok()}
+                // onClick={() => linkTiktok()}
                 className="rounded-md bg-orange-500 px-3 py-2 text-white hover:bg-orange-600"
               >
                 Link
               </button>
               <button
-                onClick={() => unlinkTiktok()}
+                // onClick={() => unlinkTiktok()}
                 className="rounded-md bg-gray-100 px-3 py-2 text-gray-800 hover:bg-gray-200"
               >
                 Unlink
@@ -111,7 +112,7 @@ function SocialsPage() {
               <button
                 onClick={async () => {
                   try {
-                    await linkTelegram();
+                    //  await linkTelegram();
                     setInfo("Telegram linked (if available).");
                   } catch (e) {
                     setInfo(
@@ -153,5 +154,3 @@ function SocialsPage() {
 }
 
 export default SocialsPage;
-
-

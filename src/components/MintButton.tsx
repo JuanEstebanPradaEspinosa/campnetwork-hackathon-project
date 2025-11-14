@@ -22,9 +22,9 @@ export default function MintButton({ file, imageId, meta }: MintButtonProps) {
     if (!origin || !jwt) throw new Error("User not authenticated");
 
     const licence = {
-      price: 0n,
-      duration: 0,
-      royaltyBps: 0,
+      price: 1000000000000000000n,
+      duration: 86400,
+      royaltyBps: 25,
       paymentToken: "0x0000000000000000000000000000000000000000",
     } as LicenseTerms;
 
